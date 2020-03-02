@@ -1,2 +1,2 @@
 # testJava-zl
-postgreSQL+JDBC+springMVC
+postgreSQL+Hibernate+springMVC
