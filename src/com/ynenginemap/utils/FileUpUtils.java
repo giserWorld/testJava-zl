@@ -14,8 +14,8 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 public class FileUpUtils {
 
 	public Map<String, Object> fileUpload(CommonsMultipartFile[] file,HttpServletRequest request) {
-		Map<String, Object> map = new HashMap<>();
-		List<Map<String, Object>> list = new ArrayList<>();
+		Map<String, Object> map = new HashMap<String, Object>();
+		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 		String path=  request.getSession().getServletContext().getRealPath("");
 		String projectName= request.getSession().getServletContext().getContextPath().replace("/", "");
 		//获取到存储路径
@@ -40,7 +40,7 @@ public class FileUpUtils {
 			            System.out.println("fileName 1:"+fileName);
 			            // 转存文件  
 			            file[i].transferTo(new File(path+filePathNm));
-			            Map<String, Object> map1 = new HashMap<>();
+			            Map<String, Object> map1 = new HashMap<String, Object>();
 						map1.put("path", path+filePathNm);
 						map1.put("name", fileName);
 						list.add(map1);

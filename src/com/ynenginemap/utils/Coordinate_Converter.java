@@ -38,7 +38,7 @@ public class Coordinate_Converter {
      * @return
      */
     public static Map<String, Double> ToGPS(double longitude, double latitude) {
-        Map<String, Double> position = new HashMap<>();
+        Map<String, Double> position = new HashMap<String, Double>();
         if (!outofChina(latitude, longitude)) {
             //转换为火星坐标
             double x = longitude - 0.0065, y = latitude - 0.006;

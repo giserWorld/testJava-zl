@@ -10,7 +10,7 @@ public class CookieUtils {
 
 	
 	public Map<String, Object> getUserIdAndDllx(HttpServletRequest request){
-		Map<String, Object> map = new HashMap<>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		Cookie[] cookies = request.getCookies(); //获取cookie数组
 		if(cookies != null){
 			for(Cookie cookie:cookies){//遍历cookie数组

@@ -52,9 +52,9 @@ public class longitudeAndLatitudeUtil {
 	 public static String getLine_WKT(String s){
 			String ss = s.replace("LINESTRING(", "").replace(")", "");
 			String[] sss = ss.split(",");
-			List<Object> all = new ArrayList<>();
+			List<Object> all = new ArrayList<Object>();
 			for(String str:sss){
-				List<String> list = new ArrayList<>();
+				List<String> list = new ArrayList<String>();
 				String[] strs = str.split(" ");
 				list.add(strs[0]);
 				list.add(strs[1]);

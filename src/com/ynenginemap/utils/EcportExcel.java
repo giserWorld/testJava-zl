@@ -27,7 +27,7 @@ public class EcportExcel {
 	 */
 	public Map<String, Object> ecportExcel(List<Map<String, Object>> list,String userId,String xzdm,String tjlx,
 			HttpServletRequest request, HttpServletResponse response){
-		Map<String, Object> map = new HashMap<>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		try {
 			Map<String, Object> map0 = new HashMap<String, Object>();
 			//表头
@@ -98,7 +98,7 @@ public class EcportExcel {
 
 	public Map<String, Object> ecportExcelHj(List<Map<String, Object>> list,String userId,String xzdm,
 			HttpServletRequest request, HttpServletResponse response){
-		Map<String, Object> map = new HashMap<>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		try {
 			Map<String, Object> map0 = new HashMap<String, Object>();
 			//表头
@@ -153,7 +153,7 @@ public class EcportExcel {
 
 	public Map<String, Object> ecportExcelWzjz(List<Map<String, Object>> list,String userId,String xzdm,String type,
 			HttpServletRequest request, HttpServletResponse response){
-		Map<String, Object> map = new HashMap<>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		try {
 			Map<String, Object> map0 = new HashMap<String, Object>();
 			//表头

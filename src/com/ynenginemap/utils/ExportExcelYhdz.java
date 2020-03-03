@@ -24,7 +24,7 @@ public class ExportExcelYhdz {
 
 
 	public Map<String, Object> ecportExcelYhdz(HSSFWorkbook workbook,HSSFSheet sheet,List<Map<String, Object>> list){
-		Map<String, Object> map0 = new HashMap<>();
+		Map<String, Object> map0 = new HashMap<String, Object>();
 		try {
 //			Map<String, Object> map0 = new HashMap<String, Object>();
 			  //构建数据源中的key值
@@ -32,7 +32,7 @@ public class ExportExcelYhdz {
 
 			List<Map<String, String>> dataSourceList=new ArrayList<Map<String,String>>();
 			List<Map<String, String>> dataSourceList1=new ArrayList<Map<String,String>>();
-			Map<String, String> map1 = new HashMap<>();
+			Map<String, String> map1 = new HashMap<String, String>();
 			map1.put("序号", "序号");
 			map1.put("应拆老屋户主", "性别");
 			map1.put("应拆宗数", "应拆宗数");
@@ -42,7 +42,7 @@ public class ExportExcelYhdz {
 			map1.put("备注", "备注");
 			dataSourceList1.add(map1);
 			for(int i=0;i<list.size();i++){
-				Map<String, String> map = new HashMap<>();
+				Map<String, String> map = new HashMap<String, String>();
 				map.put("序号", i+1+"");
 				map.put("应拆老屋户主", (String)list.get(i).get("hzmc"));
 //				map.put("应拆宗数", (String)list.get(i).get("yczs"));
