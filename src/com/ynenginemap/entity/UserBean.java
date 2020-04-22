@@ -1,16 +1,16 @@
 package com.ynenginemap.entity;
 
-//user表
+//tb_user表
 public class UserBean {
-	private String id;
-	private String name;
-	private String password;
+	private String userid;//用户id
+	private String name;//用户名
+	private String password;//密码
 	
-	public String getId() {
-		return id;
+	public String getUserid() {
+		return userid;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUserid(String userid) {
+		this.userid = userid;
 	}
 	public String getName() {
 		return name;

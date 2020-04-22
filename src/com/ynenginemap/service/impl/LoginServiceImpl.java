@@ -13,7 +13,7 @@ import com.ynenginemap.service.LoginService;
 
 
 @Service("LoginService")//暴露出自定义名字的service bean
-@Transactional
+@Transactional//事务注解为transactional bean
 public class LoginServiceImpl implements LoginService {
 	
 	//自动注入
@@ -25,7 +25,7 @@ public class LoginServiceImpl implements LoginService {
 	
 	@Override
 	public Map<String, Object> getByUsernameAndpassword(String username, String password,String path) {
-		String sql = "select * from tb_user where id='1'";
+		String sql = "select * from tb_user where userid='1'";
 		Map<String, Object> user = mDAO.getBySQL1(sql);
 		return user;
 	}

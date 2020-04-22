@@ -19,7 +19,7 @@ public class TestController {
 	public Object test(HttpServletRequest request,HttpServletResponse response){
 		Map<String,Object> map=new HashMap<String,Object>();
 		map.put("mgs","获取数据成功！");
-		map.put("code","0");
+		map.put("code",0);
 		map.put("data","");
 		return map;
 	}
