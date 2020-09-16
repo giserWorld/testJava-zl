@@ -23,8 +23,9 @@ import com.ynenginemap.service.LoginService;
 @Controller
 public class LoginController {
 
-	@Resource//自动注入bean
+	@Resource//java自动注入bean
 	private LoginService loginService;
+	
 	
 	@RequestMapping("login.action")
 	@ResponseBody 
@@ -32,11 +33,6 @@ public class LoginController {
 			HttpSession session,String username,String password){
 		
 		Map<String, Object> map = new HashMap<String, Object>();
-		
-		String path=  request.getSession().getServletContext().getRealPath("");
-		String projectName= request.getSession().getServletContext().getContextPath().replace("/", "");
-		//获取到存储路径
-		path= path.split(projectName)[0]+"ImageServer\\";
 		
 		Map<String, Object> user = loginService.getByUsernameAndpassword(username,password,"");
 		
